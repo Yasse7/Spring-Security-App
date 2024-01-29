@@ -15,7 +15,7 @@ import java.util.List;
 @Controller
 public class CustomerContoller {
 
-     @Autowired
+    @Autowired
     private CustomerRepository customerRepository;
 
      @GetMapping("/customers")
@@ -25,5 +25,4 @@ public class CustomerContoller {
          model.addAttribute("customers",ListCustomers);
          return "customers";
      }
-
 }
